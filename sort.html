@@ -161,7 +161,7 @@
             let pivot = array[startIndex];
             let left = startIndex;
             let right = endIndex;
-            while (left != right) {
+            while (left !== right) {
                 while (left < right && array[right] > pivot) {
                     right--
                 }
@@ -192,7 +192,7 @@
             setInterval(function () {
                 if (middleStep < middleArray.length) {
                     createColumnArray(middleArray[middleStep++])
-                    if (middleStep == middleArray.length) {
+                    if (middleStep === middleArray.length) {
                         sortSuccess(array)
                     }
                 }
